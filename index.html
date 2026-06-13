@@ -132,7 +132,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: url('jewelry.png') no-repeat 100px center;
+    background: url('jewelry.png') no-repeat center center;
 }
 
 .whatsapp{
@@ -188,6 +188,20 @@ footer{
     width: 72px;
 }
 
+.whatsapp-icon {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .whatsapp-icon {
+        display: none;
+    }
+
+    .header-main {
+        background: url('jewelry.png') no-repeat -1000px center;
+    }
+}
+
 </style>
 </head>
 
@@ -195,7 +209,7 @@ footer{
 
 <header class="header-main" >
     <h1>There's never been a better time to</h1>
-    <h2 class="gradient-text">Sell Your Gold</h2>
+    <h2>Sell Your Gold</h2>
     <p>
         We buy unwanted gold, platinum and silver jewellery —
         even a small amount could be worth up to <strong>£400</strong>.
@@ -205,7 +219,7 @@ footer{
            href="https://wa.me/447768548837?text=Hello%20David,%20I%20would%20like%20a%20free%20valuation%20for%20my%20gold%20jewellery."
            target="_blank"
         >
-            <img src="whatsapp-svgrepo-com.svg" alt="Whatsapp" style="width: 100px">
+            <img src="whatsapp-svgrepo-com.svg" alt="Whatsapp" class="whatsapp-icon" style="width: 100px">
             <div class="whatsapp-text">
                 <h3>CALL OR WHATSAPP DAVID</h3>
                 <h1 style="color: black">07768 548 837</h1>
@@ -281,7 +295,7 @@ footer{
         <div class="card">
             <div class="card-text">
                 <h4>3. Get Paid</h4>
-                <p>Accept the offer and receive your payment quickly.</p>
+                <p>Simple process and quick payment for your precious metals.</p>
             </div>
         </div>
     </div>
