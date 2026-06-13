@@ -36,13 +36,12 @@ body{
 /* Área invisível sobre a faixa do telefone */
 .banner-whatsapp{
     position:absolute;
-    left:5%;
-    right:5%;
-    bottom:1%;
-    height:16%;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:18%;
+    z-index:10;
     display:block;
-    background:transparent;
-    cursor:pointer;
 }
 
 /* CONTEÚDO */
@@ -130,10 +129,10 @@ footer{
 <div class="banner-container">
     <img src="gold-banner.png" alt="David Gold Buyers" class="banner-image">
 
-    <!-- Clique invisível sobre a faixa do telefone -->
     <a class="banner-whatsapp"
-       href="https://wa.me/447768548837?text=Hello%20David,%20I%20would%20like%20a%20free%20valuation%20for%20my%20gold%20or%20jewellery."
-       target="_blank">
+       href="https://wa.me/447768548837?text=Hello%20David,%20I%20would%20like%20a%20free%20valuation%20for%20my%20gold."
+       target="_blank"
+       aria-label="Open WhatsApp">
     </a>
 </div>
 
