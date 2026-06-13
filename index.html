@@ -1,174 +1,30 @@
 <body>
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>David Gold Buyers</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-body{
-    background:#111;
-    color:#fff;
-    line-height:1.6;
-}
-
-header{
-    background:linear-gradient(to right,#000,#222);
-    padding:70px 20px;
-    text-align:center;
-    border-bottom:4px solid #d4af37;
-}
-
-header h1{
-    font-size:2.2rem;
-    color:#ffffff;
-    margin-bottom:10px;
-}
-
-header h2{
-    font-size:4rem;
-    color:#d4af37;
-    margin-bottom:20px;
-    text-transform:uppercase;
-}
-
-header p{
-    font-size:1.2rem;
-    max-width:750px;
-    margin:0 auto 25px auto;
-}
-
-.button{
-    display:inline-block;
-    background:#d4af37;
-    color:#000;
-    padding:15px 30px;
-    text-decoration:none;
-    font-weight:bold;
-    font-size:1.1rem;
-    border-radius:6px;
-    transition:0.3s;
-}
-
-.button:hover{
-    background:#f1c84b;
-}
-
-.section{
-    max-width:1100px;
-    margin:auto;
-    padding:60px 20px;
-}
-
-.section h3{
-    color:#d4af37;
-    text-align:center;
-    margin-bottom:30px;
-    font-size:2rem;
-}
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-}
-
-.card{
-    background:#1c1c1c;
-    border:1px solid #d4af37;
-    border-radius:10px;
-    padding:25px;
-    text-align:center;
-}
-
-.card h4{
-    color:#d4af37;
-    margin-bottom:10px;
-}
-
-.highlight{
-    background:#d4af37;
-    color:#000;
-    text-align:center;
-    padding:50px 20px;
-}
-
-.highlight h3{
-    color:#000;
-    margin-bottom:15px;
-}
-
-.contact{
-    background:#000;
-    text-align:center;
-    padding:60px 20px;
-    border-top:4px solid #d4af37;
-}
-
-.contact h3{
-    color:#fff;
-    margin-bottom:15px;
-}
-
-.phone a{
-    color:#d4af37;
-    font-size:3rem;
-    font-weight:bold;
-    text-decoration:none;
-}
-
-.phone a:hover{
-    color:#f1c84b;
-}
-
-footer{
-    background:#111;
-    color:#bbb;
-    text-align:center;
-    padding:20px;
-    font-size:0.9rem;
-}
-
-@media(max-width:768px){
-    header h2{
-        font-size:2.8rem;
-    }
-
-    .phone a{
-        font-size:2rem;
-    }
-}
-</style>
-</head>
-
 <body>
 
-<header>
-    <h1>There's never been a better time to</h1>
-    <h2>SELL YOUR GOLD</h2>
+<!-- Banner principal -->
+<section style="background:#111; text-align:center;">
+    <img src="gold-banner.png"
+         alt="David Gold Buyers"
+         style="width:100%; max-width:1400px; display:block; margin:auto;">
+</section>
 
-    <p>
-        We buy unwanted gold, platinum and silver jewellery —
-        even a small amount could be worth up to <strong>£400</strong>.
-    </p>
-
-    <!-- BOTÃO QUE ABRE O WHATSAPP -->
+<!-- Botão principal -->
+<section style="background:#111; text-align:center; padding:30px 20px;">
     <a href="https://wa.me/447768548837?text=Hello%20David,%20I%20would%20like%20a%20free%20valuation%20for%20my%20gold%20jewellery."
-       class="button"
-       target="_blank">
-       Call or WhatsApp David
+       target="_blank"
+       style="display:inline-block;
+              background:#d4af37;
+              color:#000;
+              padding:16px 35px;
+              font-size:22px;
+              font-weight:bold;
+              text-decoration:none;
+              border-radius:8px;">
+        Call or WhatsApp David
     </a>
-</header>
+</section>
 
+<!-- Informações -->
 <section class="section">
     <h3>Why Choose Us?</h3>
 
@@ -190,49 +46,51 @@ footer{
 
         <div class="card">
             <h4>Fast & Confidential Service</h4>
-            <p>Simple process and prompt payment for your precious metals.</p>
+            <p>Friendly, discreet and prompt payment for your precious metals.</p>
         </div>
     </div>
 </section>
 
+<!-- O que compramos -->
 <section class="highlight">
     <h3>What We Buy</h3>
-
     <p>
-        Gold jewellery • Platinum jewellery • Silver jewellery •
-        Broken jewellery • Watches • Coins • Scrap precious metals
+        Gold Jewellery • Platinum Jewellery • Silver Jewellery •
+        Broken Jewellery • Watches • Coins • Scrap Precious Metals
     </p>
 </section>
 
+<!-- Como funciona -->
 <section class="section">
     <h3>How It Works</h3>
 
     <div class="cards">
         <div class="card">
-            <h4>1. Contact David</h4>
-            <p>Click the WhatsApp button or send us a message.</p>
+            <h4>1. Contact Us</h4>
+            <p>Call or send a WhatsApp message to arrange your free valuation.</p>
         </div>
 
         <div class="card">
             <h4>2. Free Valuation</h4>
-            <p>Receive a fair and professional assessment of your items.</p>
+            <p>We provide a fair, honest and no-obligation assessment.</p>
         </div>
 
         <div class="card">
             <h4>3. Get Paid</h4>
-            <p>Accept the offer and receive your payment quickly.</p>
+            <p>If you're happy with the offer, receive payment quickly.</p>
         </div>
     </div>
 </section>
 
+<!-- Contacto -->
 <section class="contact">
     <h3>Call or WhatsApp David</h3>
 
-    <!-- NÚMERO CLICÁVEL QUE ABRE O WHATSAPP -->
     <div class="phone">
         <a href="https://wa.me/447768548837?text=Hello%20David,%20I%20would%20like%20a%20free%20valuation%20for%20my%20gold%20jewellery."
-           target="_blank">
-           07768 548 837
+           target="_blank"
+           style="color:#d4af37; text-decoration:none;">
+            07768 548 837
         </a>
     </div>
 
@@ -246,5 +104,3 @@ footer{
 </footer>
 
 </body>
-</html>
-```
