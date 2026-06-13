@@ -1,95 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>David Gold Buyers</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#111;
+    color:#fff;
+    line-height:1.6;
+}
+
+.banner{
+    width:100%;
+    background:#111;
+}
+
+.banner img{
+    width:100%;
+    max-width:1400px;
+    display:block;
+    margin:auto;
+    height:auto;
+}
+
+.whatsapp{
+    text-align:center;
+    padding:30px 20px;
+    background:#111;
+}
+
+.button{
+    display:inline-block;
+    background:#d4af37;
+    color:#000;
+    text-decoration:none;
+    font-size:22px;
+    font-weight:bold;
+    padding:15px 35px;
+    border-radius:8px;
+}
+
+.section{
+    max-width:1100px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+.section h2{
+    text-align:center;
+    color:#d4af37;
+    margin-bottom:30px;
+    font-size:2rem;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1c1c1c;
+    border:1px solid #d4af37;
+    border-radius:10px;
+    padding:25px;
+    text-align:center;
+}
+
+.card h3{
+    color:#d4af37;
+    margin-bottom:10px;
+}
+
+.highlight{
+    background:#d4af37;
+    color:#000;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.contact{
+    text-align:center;
+    padding:60px 20px;
+    background:#000;
+}
+
+.contact h2{
+    color:#fff;
+    margin-bottom:20px;
+}
+
+.phone a{
+    color:#d4af37;
+    text-decoration:none;
+    font-size:3rem;
+    font-weight:bold;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    color:#bbb;
+    background:#111;
+}
+
+@media (max-width:768px){
+    .button{
+        font-size:18px;
+        padding:12px 25px;
+    }
+
+    .phone a{
+        font-size:2rem;
+    }
+}
+</style>
+</head>
+
 <body>
 
-<!-- Banner principal -->
-<section style="background:#111; text-align:center;">
-    <img src="gold-banner.png"
-         alt="David Gold Buyers"
-         style="width:100%; max-width:1400px; display:block; margin:auto;">
-</section>
+<!-- IMAGEM NO TOPO -->
+<div class="banner">
+    <img src="gold-banner.png" alt="David Gold Buyers">
+</div>
 
-<!-- Botão principal -->
-<section style="background:#111; text-align:center; padding:30px 20px;">
-    <a href="https://wa.me/447768548837?text=Hello%20David,%20I%20would%20like%20a%20free%20valuation%20for%20my%20gold%20jewellery."
-       target="_blank"
-       style="display:inline-block;
-              background:#d4af37;
-              color:#000;
-              padding:16px 35px;
-              font-size:22px;
-              font-weight:bold;
-              text-decoration:none;
-              border-radius:8px;">
-        Call or WhatsApp David
+<!-- BOTÃO WHATSAPP -->
+<div class="whatsapp">
+    <a class="button"
+       href="https://wa.me/447768548837?text=Hello%20David,%20I%20would%20like%20a%20free%20valuation%20for%20my%20gold%20jewellery."
+       target="_blank">
+       Call or WhatsApp David
     </a>
-</section>
+</div>
 
-<!-- Informações -->
+<!-- WHY CHOOSE US -->
 <section class="section">
-    <h3>Why Choose Us?</h3>
+    <h2>Why Choose Us?</h2>
 
     <div class="cards">
         <div class="card">
-            <h4>35 Years of Experience</h4>
+            <h3>35 Years of Experience</h3>
             <p>Trusted and professional service with decades of expertise.</p>
         </div>
 
         <div class="card">
-            <h4>Free, No-Obligation Valuation</h4>
-            <p>Receive an honest and competitive valuation for your jewellery.</p>
+            <h3>Free Valuation</h3>
+            <p>No-obligation valuation with competitive prices paid.</p>
         </div>
 
         <div class="card">
-            <h4>Home Visits Available</h4>
-            <p>Our experts can come to you for a secure and convenient service.</p>
+            <h3>Home Visits</h3>
+            <p>We can come to you for a secure and convenient service.</p>
         </div>
 
         <div class="card">
-            <h4>Fast & Confidential Service</h4>
-            <p>Friendly, discreet and prompt payment for your precious metals.</p>
+            <h3>Fast Payment</h3>
+            <p>Simple process and prompt payment for your precious metals.</p>
         </div>
     </div>
 </section>
 
-<!-- O que compramos -->
+<!-- WHAT WE BUY -->
 <section class="highlight">
-    <h3>What We Buy</h3>
+    <h2>What We Buy</h2>
     <p>
         Gold Jewellery • Platinum Jewellery • Silver Jewellery •
         Broken Jewellery • Watches • Coins • Scrap Precious Metals
     </p>
 </section>
 
-<!-- Como funciona -->
+<!-- HOW IT WORKS -->
 <section class="section">
-    <h3>How It Works</h3>
+    <h2>How It Works</h2>
 
     <div class="cards">
         <div class="card">
-            <h4>1. Contact Us</h4>
-            <p>Call or send a WhatsApp message to arrange your free valuation.</p>
+            <h3>1. Contact David</h3>
+            <p>Send a WhatsApp message to arrange your free valuation.</p>
         </div>
 
         <div class="card">
-            <h4>2. Free Valuation</h4>
-            <p>We provide a fair, honest and no-obligation assessment.</p>
+            <h3>2. Free Valuation</h3>
+            <p>Receive a fair and honest assessment of your items.</p>
         </div>
 
         <div class="card">
-            <h4>3. Get Paid</h4>
-            <p>If you're happy with the offer, receive payment quickly.</p>
+            <h3>3. Get Paid</h3>
+            <p>Accept the offer and receive payment quickly.</p>
         </div>
     </div>
 </section>
 
-<!-- Contacto -->
+<!-- CONTACT -->
 <section class="contact">
-    <h3>Call or WhatsApp David</h3>
+    <h2>Call or WhatsApp David</h2>
 
     <div class="phone">
         <a href="https://wa.me/447768548837?text=Hello%20David,%20I%20would%20like%20a%20free%20valuation%20for%20my%20gold%20jewellery."
-           target="_blank"
-           style="color:#d4af37; text-decoration:none;">
-            07768 548 837
+           target="_blank">
+           07768 548 837
         </a>
     </div>
 
@@ -103,3 +221,4 @@
 </footer>
 
 </body>
+</html>
