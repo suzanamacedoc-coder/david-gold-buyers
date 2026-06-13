@@ -38,9 +38,6 @@ header h2{
     color:#d4af37;
     margin-bottom:20px;
     text-transform:uppercase;
-    background: linear-gradient(180deg,rgba(208, 156, 23, 1) 40%, rgba(255, 255, 255, 1) 50%, rgba(208, 156, 23, 1) 60%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 header p{
@@ -167,7 +164,7 @@ footer{
     cursor: pointer;
     font-size: 16px;
     width: fit-content;
-    margin: 24px auto;
+    margin: 48px auto;
 }
 
 .whatsapp-text {
@@ -200,7 +197,44 @@ footer{
     .header-main {
         background: url('jewelry.png') no-repeat -1000px center;
     }
+
+    .gradient-letter {
+        background: linear-gradient(50deg,rgba(208, 156, 23, 1) 30%, rgba(255, 255, 255, 1) 50%, rgba(208, 156, 23, 1) 70%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
 }
+
+@media screen and (min-width: 768px) {
+    .whatsapp-icon {
+        display: block;
+    }
+
+    .header-main {
+        background: url('jewelry.png') no-repeat center center;
+    }
+
+    .gradient-letter {
+        background: linear-gradient(180deg,rgba(208, 156, 23, 1) 30%, rgba(255, 255, 255, 1) 50%, rgba(208, 156, 23, 1) 70%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+}
+
+.glow {
+    background-color: rgba(0,0,0,0.5);
+}
+
+/*.gradient-letter {
+    background: linear-gradient(180deg,rgba(208, 156, 23, 1) 30%, rgba(255, 255, 255, 1) 50%, rgba(208, 156, 23, 1) 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    !*
+    text-shadow: rgba(208,156,23,0.6) 0 0 39px;
+    *!
+}*/
 
 </style>
 </head>
@@ -209,11 +243,11 @@ footer{
 
 <header class="header-main" >
     <h1>There's never been a better time to</h1>
-    <h2>Sell Your Gold</h2>
-    <p>
+    <h2 class="gradient-letter">Sell Your Gold</h2>
+    <h3 class="glow">
         We buy unwanted gold, platinum and silver jewellery —
         even a small amount could be worth up to <strong>£400</strong>.
-    </p>
+    </h3>
     <div class="whatsapp overlay-button">
         <a class="button-whatsapp"
            href="https://wa.me/447768548837?text=Hello%20David,%20I%20would%20like%20a%20free%20valuation%20for%20my%20gold%20jewellery."
@@ -303,7 +337,12 @@ footer{
 
 <section class="contact">
     <h3>Call or WhatsApp David</h3>
-    <div class="phone">07768 548 837</div>
+    <a style="text-decoration: none"
+       href="https://wa.me/447768548837?text=Hello%20David,%20I%20would%20like%20a%20free%20valuation%20for%20my%20gold%20jewellery."
+       target="_blank"
+    >
+        <div class="phone">07768 548 837</div>
+    </a>
     <p style="margin-top:20px;">
         Free • No Obligation • Friendly & Confidential Service
     </p>
