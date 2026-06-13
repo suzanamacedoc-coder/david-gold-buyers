@@ -20,45 +20,41 @@ body{
     line-height:1.6;
 }
 
-.banner{
-    width:100%;
-    background:#111;
+/* BANNER */
+.banner-container{
+    position:relative;
+    max-width:1200px;
+    margin:auto;
 }
 
-.banner img{
+.banner-image{
     width:100%;
-    max-width:1400px;
     display:block;
-    margin:auto;
     height:auto;
 }
 
-.whatsapp{
-    text-align:center;
-    padding:30px 20px;
-    background:#111;
+/* Área invisível sobre a faixa do telefone */
+.banner-whatsapp{
+    position:absolute;
+    left:5%;
+    right:5%;
+    bottom:1%;
+    height:16%;
+    display:block;
+    background:transparent;
+    cursor:pointer;
 }
 
-.button{
-    display:inline-block;
-    background:#d4af37;
-    color:#000;
-    text-decoration:none;
-    font-size:22px;
-    font-weight:bold;
-    padding:15px 35px;
-    border-radius:8px;
-}
-
+/* CONTEÚDO */
 .section{
     max-width:1100px;
     margin:auto;
-    padding:60px 20px;
+    padding:50px 20px;
 }
 
 .section h2{
-    text-align:center;
     color:#d4af37;
+    text-align:center;
     margin-bottom:30px;
     font-size:2rem;
 }
@@ -86,42 +82,43 @@ body{
     background:#d4af37;
     color:#000;
     text-align:center;
-    padding:50px 20px;
+    padding:45px 20px;
+}
+
+.highlight h2{
+    color:#000;
+    margin-bottom:15px;
 }
 
 .contact{
-    text-align:center;
-    padding:60px 20px;
     background:#000;
+    text-align:center;
+    padding:50px 20px;
+    border-top:3px solid #d4af37;
 }
 
-.contact h2{
-    color:#fff;
-    margin-bottom:20px;
-}
-
-.phone a{
+.contact a{
     color:#d4af37;
     text-decoration:none;
-    font-size:3rem;
+    font-size:2.5rem;
     font-weight:bold;
 }
 
 footer{
+    background:#111;
+    color:#aaa;
     text-align:center;
     padding:20px;
-    color:#bbb;
-    background:#111;
+    font-size:0.9rem;
 }
 
-@media (max-width:768px){
-    .button{
-        font-size:18px;
-        padding:12px 25px;
+@media(max-width:768px){
+    .contact a{
+        font-size:1.8rem;
     }
 
-    .phone a{
-        font-size:2rem;
+    .section h2{
+        font-size:1.6rem;
     }
 }
 </style>
@@ -129,17 +126,14 @@ footer{
 
 <body>
 
-<!-- IMAGEM NO TOPO -->
-<div class="banner">
-    <img src="gold-banner.png" alt="David Gold Buyers">
-</div>
+<!-- BANNER -->
+<div class="banner-container">
+    <img src="gold-banner.png" alt="David Gold Buyers" class="banner-image">
 
-<!-- BOTÃO WHATSAPP -->
-<div class="whatsapp">
-    <a class="button"
-       href="https://wa.me/447768548837?text=Hello%20David,%20I%20would%20like%20a%20free%20valuation%20for%20my%20gold%20jewellery."
+    <!-- Clique invisível sobre a faixa do telefone -->
+    <a class="banner-whatsapp"
+       href="https://wa.me/447768548837?text=Hello%20David,%20I%20would%20like%20a%20free%20valuation%20for%20my%20gold%20or%20jewellery."
        target="_blank">
-       Call or WhatsApp 
     </a>
 </div>
 
@@ -150,22 +144,22 @@ footer{
     <div class="cards">
         <div class="card">
             <h3>35 Years of Experience</h3>
-            <p>Trusted and professional service with decades of expertise.</p>
+            <p>Trusted, professional and reliable precious metal buyers.</p>
         </div>
 
         <div class="card">
             <h3>Free Valuation</h3>
-            <p>No-obligation valuation with competitive prices paid.</p>
+            <p>No-obligation valuations with competitive offers.</p>
         </div>
 
         <div class="card">
             <h3>Home Visits</h3>
-            <p>We can come to you for a secure and convenient service.</p>
+            <p>We can come to you for a safe and convenient service.</p>
         </div>
 
         <div class="card">
             <h3>Fast Payment</h3>
-            <p>Simple process and prompt payment for your precious metals.</p>
+            <p>Quick, simple and confidential payment process.</p>
         </div>
     </div>
 </section>
@@ -186,12 +180,12 @@ footer{
     <div class="cards">
         <div class="card">
             <h3>1. Contact David</h3>
-            <p>Send a WhatsApp message to arrange your free valuation.</p>
+            <p>Call or send a WhatsApp message.</p>
         </div>
 
         <div class="card">
             <h3>2. Free Valuation</h3>
-            <p>Receive a fair and honest assessment of your items.</p>
+            <p>Receive an honest, no-obligation assessment.</p>
         </div>
 
         <div class="card">
@@ -203,18 +197,15 @@ footer{
 
 <!-- CONTACT -->
 <section class="contact">
-    <h2>Call or WhatsApp
-        David</h2>
+    <h2>Contact David</h2>
 
-    <div class="phone">
-        <a href="https://wa.me/447768548837?text=Hello%20David,%20I%20would%20like%20a%20free%20valuation%20for%20my%20gold%20jewellery."
-           target="_blank">
-           07768 548 837
-        </a>
-    </div>
+    <a href="https://wa.me/447768548837?text=Hello%20David,%20I%20would%20like%20a%20free%20valuation%20for%20my%20gold%20or%20jewellery."
+       target="_blank">
+       07768 548 837
+    </a>
 
-    <p style="margin-top:20px;">
-        Free • No Obligation • Friendly & Confidential Service
+    <p style="margin-top:15px;">
+        Friendly • Confidential • No Obligation
     </p>
 </section>
 
